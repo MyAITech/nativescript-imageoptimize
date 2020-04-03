@@ -5,6 +5,7 @@ const utils = require('tns-core-modules/utils/utils');
 const fs = require('tns-core-modules/file-system');
 const imageSource = require('tns-core-modules/image-source');
 function optimize(msg) {
+    console.log("dusio");
     const options = msg.data.options;
     let optimizer;
     let ratio;
