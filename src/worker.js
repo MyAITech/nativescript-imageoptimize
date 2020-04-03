@@ -9,7 +9,7 @@ function optimize(msg) {
     let optimizer;
     let ratio;
     const temp = fs.knownFolders.temp().path;
-    const imgSrc = imageSource.fromFile(options.src);
+    const imgSrc = imageSource.fromFileSync(options.src);
     if (platform.isAndroid) {
         optimizer = new id.zelory.compressor.Compressor(utils.ad.getApplicationContext());
 
